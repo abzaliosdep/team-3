@@ -1,18 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore"; // Добавлено для работы с Firestore
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "YOUR_DATABASE_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID" // Опционально для Firebase JS SDK v7.20.0 и выше
+  apiKey: "AIzaSyAqkIiZLmxBkOnOXOOGM4KrXv8aDcCy5_s",
+  authDomain: "otaumart-bf6ef.firebaseapp.com",
+  databaseURL: "https://otaumart-bf6ef-default-rtdb.firebaseio.com",
+  projectId: "otaumart-bf6ef",
+  storageBucket: "otaumart-bf6ef.appspot.com",
+  messagingSenderId: "461226652669",
+  appId: "1:461226652669:web:565918a95c0cca233edf94",
+  measurementId: "G-52EQ4GMC33"
 };
 
 // Initialize Firebase
