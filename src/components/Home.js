@@ -33,7 +33,7 @@ function Home() {
                 const totalCommandsDoc = await transaction.get(totalCommandsNumberRef);
 
                 if (!totalCommandsDoc.exists()) {
-                    throw "Document does not exists";
+                    throw "Document does not exist";
                 }
 
                 let commandNumber = totalCommandsDoc.data().commands_number + 1;
@@ -128,7 +128,6 @@ function Home() {
         </div>
       </div>
     );
-
+}
 
 export default Home;
-
