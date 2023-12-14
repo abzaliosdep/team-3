@@ -15,8 +15,8 @@
 }
 
 .image-container {
-    width: 100px; /* Уменьшим размер контейнера */
-    height: 100px; /* Уменьшим размер контейнера */
+    width: 200px; /* Увеличим размер контейнера */
+    height: 200px; /* Увеличим размер контейнера */
     background: white;
     border-radius: 50%;
     display: flex;
@@ -27,15 +27,8 @@
 
 .image img {
     display: block;
-    width: 70%; /* Уменьшим размер изображения */
-    height: 70%; /* Уменьшим размер изображения */
-    object-fit: cover;
-}
-
-.image img {
-    display: block;
-    width: 70%;
-    height: 70%;
+    width: 100%; /* Займет 100% ширины родительского контейнера */
+    height: auto; /* Поддержит пропорциональное изменение размеров */
     object-fit: cover;
 }
 
