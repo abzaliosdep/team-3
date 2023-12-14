@@ -48,10 +48,6 @@
     overflow: hidden;
 }
 
-.form {
-    padding: 1rem; /* Добавлено для отступов внутри формы */
-}
-
 button {
     display: block;
     text-decoration: none;
@@ -90,9 +86,8 @@ h1 {
     text-align: center;
 }
 
-.text-center button {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.text-center {
+    text-align: center;
 }
 
 .red-text {
