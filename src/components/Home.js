@@ -64,69 +64,71 @@ function Home() {
     }
 
     return (
-            <div className="home">
-                <div className="container">
-                    <div className="image-container">
-                        <div className="image">
-                            <img src={albert} alt="Logo" />
-                        </div>
-            <div className="form-container">
-                <div className="card">
-                    {commandNumber === 0 ? (
-                        <div>
-                            <h1>Оставить заявку</h1>
-                            <FormControl fullWidth sx={{ m: 1 }}>
-                                <ThemeProvider theme={theme}>
-                                    <TextField
-                                        className="text-field"
-                                        id="outlined-adornment-amount"
-                                        label="Имя"
-                                        size="small"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value.trim())}
-                                        required
-                                        error={!Boolean(name)}
-                                        helperText={!Boolean(name) ? "Поле 'Имя' необходимо заполнить" : ""}
-                                    />
-                                </ThemeProvider>
-                            </FormControl>
-                            <FormControl fullWidth sx={{ m: 1 }}>
-                                <ThemeProvider theme={theme}>
-                                    <TextField
-                                        className="text-field"
-                                        id="outlined-adornment-amount"
-                                        label="Телефон"
-                                        size="small"
-                                        required
-                                        type="number"
-                                        placeholder="87759844789"
-                                        value={phone}
-                                        onChange={(e) => setPhone(e.target.value)}
-                                        error={!Boolean(phone)}
-                                        helperText={!Boolean(phone) ? "Поле 'Телефон' необходимо заполнить" : ""}
-                                    />
-                                </ThemeProvider>
-                            </FormControl>
-                            <button disabled={!Boolean(name) || !Boolean(phone) || loading} onClick={addTeam}>
-                                {loading ? 'Отправка...' : "Отправить"}
-                            </button>
-                            <sup>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</sup>
-                        </div>
-                    ) : (
-                        <div className="text-center">
-                            <h1>Ваш номер: <span className="red-text">{commandNumber}</span></h1>
-                            <h3 className="red-text">Пожалуйста, сделайте скрин экрана.</h3>
-                            <img src={albertResult} alt="" className="albert-image" />
-                            <button onClick={comeBack}>
-                                Вернуться назад
-                            </button>
-                        </div>
-                    )}
-                </div>
+      <div className="home">
+        <div className="container">
+          <div className="image-container">
+            <div className="image">
+              <img src={albert} alt="Logo" />
             </div>
+          </div>
+          <div className="form-container">
+            <div className="card">
+              {commandNumber === 0 ? (
+                <div>
+                  <h1>Оставить заявку</h1>
+                  <FormControl fullWidth sx={{ m: 1 }}>
+                    <ThemeProvider theme={theme}>
+                      <TextField
+                        className="text-field"
+                        id="outlined-adornment-amount"
+                        label="Имя"
+                        size="small"
+                        value={name}
+                        onChange={(e) => setName(e.target.value.trim())}
+                        required
+                        error={!Boolean(name)}
+                        helperText={!Boolean(name) ? "Поле 'Имя' необходимо заполнить" : ""}
+                      />
+                    </ThemeProvider>
+                  </FormControl>
+                  <FormControl fullWidth sx={{ m: 1 }}>
+                    <ThemeProvider theme={theme}>
+                      <TextField
+                        className="text-field"
+                        id="outlined-adornment-amount"
+                        label="Телефон"
+                        size="small"
+                        required
+                        type="number"
+                        placeholder="87759844789"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        error={!Boolean(phone)}
+                        helperText={!Boolean(phone) ? "Поле 'Телефон' необходимо заполнить" : ""}
+                      />
+                    </ThemeProvider>
+                  </FormControl>
+                  <button disabled={!Boolean(name) || !Boolean(phone) || loading} onClick={addTeam}>
+                    {loading ? 'Отправка...' : "Отправить"}
+                  </button>
+                  <sup>Нажимая на кнопку, вы соглашаетесь на обработку персональных данных</sup>
+                </div>
+              ) : (
+                <div className="text-center">
+                  <h1>Ваш номер: <span className="red-text">{commandNumber}</span></h1>
+                  <h3 className="red-text">Пожалуйста, сделайте скрин экрана.</h3>
+                  <img src={albertResult} alt="" className="albert-image" />
+                  <button onClick={comeBack}>
+                    Вернуться назад
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
+      </div>
     );
-}
+
 
 export default Home;
 
