@@ -36,7 +36,7 @@ function Home() {
                     throw "Document does not exists";
                 }
 
-                let commandNumber = totalCommandsDoc.data().commands_number + 1;
+                let commandNumber = totalCommandsDoc.data().people_number + 1;
 
                 transaction.set(doc(commandRef), {
                     name: name,
@@ -45,7 +45,7 @@ function Home() {
                     command_number: commandNumber,
                 });
 
-                transaction.update(totalCommandsNumberRef, { commands_number: commandNumber });
+                transaction.update(totalCommandsNumberRef, { people_number: commandNumber });
 
                 setCommandNumber(commandNumber);
             });
