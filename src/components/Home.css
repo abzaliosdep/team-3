@@ -12,7 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px; /* Измените значение отступа по вашему усмотрению */
 }
+
 
 .image-container {
     width: 200px; /* Увеличим размер контейнера */
@@ -40,14 +42,16 @@
 .card {
     position: relative;
     padding: 1.5rem;
-    width: 380px;
+    width: calc(100% - 20px); /* Измените значение отступов по вашему усмотрению */
+    max-width: 380px; /* Максимальная ширина карты */
     background: white;
     border-radius: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 1rem;
+    margin: 1rem auto; /* Центрирует карту и добавляет отступы */
     padding-top: 60px;
     overflow: hidden;
 }
+
 
 button {
     display: block;
