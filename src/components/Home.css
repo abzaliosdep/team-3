@@ -39,6 +39,7 @@
 
 .card {
     position: relative;
+    padding: 1.5rem;
     width: 380px;
     background: white;
     border-radius: 1rem;
