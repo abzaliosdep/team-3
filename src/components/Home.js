@@ -74,8 +74,9 @@ function Home() {
           <div className="form-container">
             <div className="card">
               {commandNumber === 0 ? (
-                <div>
+                <div className="form">
                   <h1>Оставить заявку</h1>
+                  {/* Вставь свою форму здесь */}
                   <FormControl fullWidth sx={{ m: 1 }}>
                     <ThemeProvider theme={theme}>
                       <TextField

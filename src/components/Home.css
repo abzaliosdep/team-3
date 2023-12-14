@@ -40,12 +40,12 @@
 }
 
 .form-container {
-    position: relative;
-    margin-top: -70px; /* Сдвигаем форму вверх, чтобы она перекрывала часть изображения */
-    z-index: 1; /* Задаем z-index, чтобы форма была выше изображения */
+    display: flex;
+    justify-content: center;
 }
 
-.form {
+.card {
+    position: relative;
     width: 380px;
     background: white;
     border-radius: 1rem;
@@ -53,6 +53,10 @@
     margin: 1rem;
     padding-top: 60px;
     overflow: hidden;
+}
+
+.form {
+    padding: 1rem; /* Добавлено для отступов внутри формы */
 }
 
 button {
