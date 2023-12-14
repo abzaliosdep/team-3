@@ -15,21 +15,21 @@
 }
 
 .image-container {
-    width: 140px;
-    height: 140px;
-    margin-top: -70px;
+    width: 100px; /* Уменьшим размер контейнера */
+    height: 100px; /* Уменьшим размер контейнера */
     background: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
+.image img {
+    display: block;
+    width: 70%; /* Уменьшим размер изображения */
+    height: 70%; /* Уменьшим размер изображения */
+    object-fit: cover;
 }
 
 .image img {
