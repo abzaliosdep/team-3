@@ -91,9 +91,8 @@ h1 {
 }
 
 .text-center button {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1rem 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .red-text {
