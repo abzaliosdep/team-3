@@ -24,7 +24,7 @@ function Home() {
     });
 
     const addTeam = async () => {
-        const totalCommandsNumberRef = doc(db, 'total_people', 'number');
+        const totalCommandsNumberRef = doc(db, 'total_commands', 'number');
         const commandRef = collection(db, "commands");
 
         try {
@@ -36,7 +36,7 @@ function Home() {
                     throw "Document does not exists";
                 }
 
-                let commandNumber = totalCommandsDoc.data().people_number + 1;
+                let commandNumber = totalCommandsDoc.data().commands_number + 1;
 
                 transaction.set(doc(commandRef), {
                     name: name,
@@ -45,7 +45,7 @@ function Home() {
                     command_number: commandNumber,
                 });
 
-                transaction.update(totalCommandsNumberRef, { people_number: commandNumber });
+                transaction.update(totalCommandsNumberRef, { commands_number: commandNumber });
 
                 setCommandNumber(commandNumber);
             });
