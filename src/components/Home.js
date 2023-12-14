@@ -64,12 +64,13 @@ function Home() {
     }
 
     return (
-        <div className="home">
-            <div className="image-container">
-                <div className="image">
-                    <img src={albert} alt="Logo" />
-                </div>
-            </div>
+            <div className="home">
+                <div className="container">
+                    <div className="image-container">
+                        <div className="image">
+                            <img src={albert} alt="Logo" />
+                        </div>
+                    </div>
             <div className="form-container">
                 <div className="card">
                     {commandNumber === 0 ? (
