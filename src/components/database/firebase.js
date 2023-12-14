@@ -5,14 +5,14 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "YOUR_DATABASE_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID" // Опционально для Firebase JS SDK v7.20.0 и выше
+  apiKey: "AIzaSyAqkIiZLmxBkOnOXOOGM4KrXv8aDcCy5_s",
+  authDomain: "otaumart-bf6ef.firebaseapp.com",
+  databaseURL: "https://otaumart-bf6ef-default-rtdb.firebaseio.com",
+  projectId: "otaumart-bf6ef",
+  storageBucket: "otaumart-bf6ef.appspot.com",
+  messagingSenderId: "461226652669",
+  appId: "1:461226652669:web:2e612cbbb15994ee3edf94",
+  measurementId: "G-6B42F0PRBB"
 };
 
 // Initialize Firebase
